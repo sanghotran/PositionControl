@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"position_control\startup_stm32f407xx.o"
+"position_control\main.o"
+"position_control\stm32f4xx_it.o"
+"position_control\stm32f4xx_hal_msp.o"
+"position_control\stm32f4xx_hal_tim.o"
+"position_control\stm32f4xx_hal_tim_ex.o"
+"position_control\stm32f4xx_hal_rcc.o"
+"position_control\stm32f4xx_hal_rcc_ex.o"
+"position_control\stm32f4xx_hal_flash.o"
+"position_control\stm32f4xx_hal_flash_ex.o"
+"position_control\stm32f4xx_hal_flash_ramfunc.o"
+"position_control\stm32f4xx_hal_gpio.o"
+"position_control\stm32f4xx_hal_dma_ex.o"
+"position_control\stm32f4xx_hal_dma.o"
+"position_control\stm32f4xx_hal_pwr.o"
+"position_control\stm32f4xx_hal_pwr_ex.o"
+"position_control\stm32f4xx_hal_cortex.o"
+"position_control\stm32f4xx_hal.o"
+"position_control\stm32f4xx_hal_exti.o"
+"position_control\stm32f4xx_hal_uart.o"
+"position_control\system_stm32f4xx.o"
+--strict --scatter "POSITION_CONTROL\POSITION_CONTROL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "POSITION_CONTROL.map" -o POSITION_CONTROL\POSITION_CONTROL.axf
